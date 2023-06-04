@@ -1,14 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controllers.PosController"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="23.0" layoutY="31.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/O-Long-Man-Kem-Pho-Mai.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="23.0" layoutY="283.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/trà-xoài-bưởi-hồng.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="23.0" layoutY="539.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Tra-Sua-Ba-Anh-Em-1-copy.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="229.0" layoutY="31.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Grass-Jelly-Milk-Coffee.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="229.0" layoutY="539.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Original-Milk-Tea.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="432.0" layoutY="31.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/O-Long-Man-Chanh-Leo.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="229.0" layoutY="283.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Tra-Dua-Nhiet-Doi-2-copy.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="432.0" layoutY="283.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Tra-Sua-Tran-Chau-Hoang-Gia-1-copy.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="432.0" layoutY="539.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+         <graphic>
+            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Stawberry-Milk-Tea.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane layoutX="649.0" layoutY="611.0" prefHeight="173.0" prefWidth="659.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="91.0" text="Total:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="14.0" layoutY="69.0" prefHeight="35.0" prefWidth="91.0" text="Cash:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="127.0" prefHeight="35.0" prefWidth="91.0" text="Balance:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="114.0" layoutY="14.0" prefHeight="35.0" prefWidth="210.0" text="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="114.0" layoutY="127.0" prefHeight="35.0" prefWidth="210.0" text="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="114.0" layoutY="61.0" prefHeight="45.0" prefWidth="210.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Button layoutX="345.0" layoutY="6.0" mnemonicParsing="false" prefHeight="162.0" prefWidth="149.0" style="-fx-background-color: #4e2a84;" text="PAY" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="502.0" layoutY="6.0" mnemonicParsing="false" prefHeight="162.0" prefWidth="149.0" style="-fx-background-color: #ff0e83;" text="PRINT" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="650.0" layoutY="32.0" prefHeight="571.0" prefWidth="337.0" style="-fx-background-color: white;">
+         <children>
+            <TableView prefHeight="507.0" prefWidth="337.0">
+              <columns>
+                <TableColumn prefWidth="38.0" text="ID" />
+                <TableColumn prefWidth="178.0" text="Name" />
+                  <TableColumn prefWidth="35.0" text="Qty" />
+                  <TableColumn prefWidth="85.0" text="Price" />
+              </columns>
+            </TableView>
+            <Button layoutX="205.0" layoutY="507.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="118.0" style="-fx-background-color: black;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Label layoutX="23.0" layoutY="216.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+      <Label fx:id="qty1" alignment="CENTER" layoutX="23.0" layoutY="247.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+      <Label fx:id="qty2" alignment="CENTER" layoutX="229.0" layoutY="247.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+      <Label layoutX="229.0" layoutY="216.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+      <Label fx:id="qty3" alignment="CENTER" layoutX="432.0" layoutY="247.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+      <Label layoutX="432.0" layoutY="216.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+      <Label fx:id="qty4" alignment="CENTER" layoutX="23.0" layoutY="499.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+      <Label layoutX="23.0" layoutY="468.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+      <Label fx:id="qty5" alignment="CENTER" layoutX="229.0" layoutY="499.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+      <Label layoutX="229.0" layoutY="468.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+      <Label fx:id="qty6" alignment="CENTER" layoutX="432.0" layoutY="499.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+      <Label layoutX="432.0" layoutY="468.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+      <Label fx:id="qty7" alignment="CENTER" layoutX="23.0" layoutY="755.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+      <Label layoutX="23.0" layoutY="724.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+      <Label fx:id="qty9" alignment="CENTER" layoutX="432.0" layoutY="755.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+      <Label layoutX="432.0" layoutY="724.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+      <Label fx:id="qty8" alignment="CENTER" layoutX="229.0" layoutY="755.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+      <Label layoutX="229.0" layoutY="724.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+      <Pane layoutX="978.0" prefHeight="603.0" prefWidth="337.0">
+         <children>
+            <TextArea layoutX="6.0" layoutY="31.0" prefHeight="571.0" prefWidth="326.0" />
+         </children></Pane>
+   </children>
+</Pane>
