@@ -1,96 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="23.0" layoutY="31.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
-         <graphic>
-            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/O-Long-Man-Kem-Pho-Mai.jpg" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="23.0" layoutY="283.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
-         <graphic>
-            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/trà-xoài-bưởi-hồng.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="23.0" layoutY="539.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
-         <graphic>
-            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/Tra-Sua-Ba-Anh-Em-1-copy.jpg" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="229.0" layoutY="31.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
-         <graphic>
-            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/Grass-Jelly-Milk-Coffee.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="229.0" layoutY="539.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
-         <graphic>
-            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/Original-Milk-Tea.jpg" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="432.0" layoutY="31.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
-         <graphic>
-            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/O-Long-Man-Chanh-Leo.jpg" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="229.0" layoutY="283.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
-         <graphic>
-            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/Tra-Dua-Nhiet-Doi-2-copy.jpg" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="432.0" layoutY="283.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
-         <graphic>
-            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/Tra-Sua-Tran-Chau-Hoang-Gia-1-copy.jpg" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button layoutX="432.0" layoutY="539.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
-         <graphic>
-            <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/Stawberry-Milk-Tea.jpg" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
       <Pane layoutX="649.0" layoutY="611.0" prefHeight="173.0" prefWidth="659.0" style="-fx-background-color: white;">
          <children>
             <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="91.0" text="Total:">
@@ -151,27 +68,112 @@
                </font>
             </Button>
          </children></Pane>
-      <Label layoutX="23.0" layoutY="216.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-      <Label fx:id="qty1" alignment="CENTER" layoutX="23.0" layoutY="247.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-      <Label fx:id="qty2" alignment="CENTER" layoutX="229.0" layoutY="247.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-      <Label layoutX="229.0" layoutY="216.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-      <Label fx:id="qty3" alignment="CENTER" layoutX="432.0" layoutY="247.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-      <Label layoutX="432.0" layoutY="216.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-      <Label fx:id="qty4" alignment="CENTER" layoutX="23.0" layoutY="499.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-      <Label layoutX="23.0" layoutY="468.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-      <Label fx:id="qty5" alignment="CENTER" layoutX="229.0" layoutY="499.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-      <Label layoutX="229.0" layoutY="468.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-      <Label fx:id="qty6" alignment="CENTER" layoutX="432.0" layoutY="499.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-      <Label layoutX="432.0" layoutY="468.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-      <Label fx:id="qty7" alignment="CENTER" layoutX="23.0" layoutY="755.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-      <Label layoutX="23.0" layoutY="724.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-      <Label fx:id="qty9" alignment="CENTER" layoutX="432.0" layoutY="755.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-      <Label layoutX="432.0" layoutY="724.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-      <Label fx:id="qty8" alignment="CENTER" layoutX="229.0" layoutY="755.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-      <Label layoutX="229.0" layoutY="724.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
       <Pane layoutX="978.0" prefHeight="603.0" prefWidth="337.0">
          <children>
             <TextArea layoutX="6.0" layoutY="31.0" prefHeight="571.0" prefWidth="326.0" />
          </children></Pane>
+      <Pane layoutX="8.0" layoutY="32.0" prefHeight="753.0" prefWidth="635.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="437.0" layoutY="681.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty1" alignment="CENTER" layoutX="421.0" layoutY="712.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label fx:id="qty2" alignment="CENTER" layoutX="196.0" layoutY="712.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label layoutX="220.0" layoutY="681.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty3" alignment="CENTER" layoutX="-5.0" layoutY="712.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label layoutX="11.0" layoutY="681.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty4" alignment="CENTER" layoutX="421.0" layoutY="472.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label layoutX="433.0" layoutY="441.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty5" alignment="CENTER" layoutX="-5.0" layoutY="472.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label layoutX="11.0" layoutY="441.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty6" alignment="CENTER" layoutX="433.0" layoutY="228.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label layoutX="433.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty7" alignment="CENTER" layoutX="208.0" layoutY="472.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label layoutX="208.0" layoutY="441.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty9" alignment="CENTER" layoutX="7.0" layoutY="228.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label layoutX="208.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty8" alignment="CENTER" layoutX="208.0" layoutY="228.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label layoutX="7.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Button layoutX="7.0" layoutY="6.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/O-Long-Man-Kem-Pho-Mai.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="214.0" layoutY="6.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/trà-xoài-bưởi-hồng.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="426.0" layoutY="6.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Tra-Sua-Ba-Anh-Em-1-copy.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="7.0" layoutY="256.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Grass-Jelly-Milk-Coffee.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="220.0" layoutY="256.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Original-Milk-Tea.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="426.0" layoutY="256.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/O-Long-Man-Chanh-Leo.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="7.0" layoutY="504.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Tra-Dua-Nhiet-Doi-2-copy.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="214.0" layoutY="504.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Tra-Sua-Tran-Chau-Hoang-Gia-1-copy.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="426.0" layoutY="504.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Stawberry-Milk-Tea.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
    </children>
 </Pane>
