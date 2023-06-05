@@ -42,6 +42,6 @@ public class PosController {
         count ++;
         qty1.setText(String.valueOf(count));
 
-        addTable(1, count,"Tocotoco", 9.99);
+        addTable(1, count,"Tocotoco-$3.99", 3.99);
     }
 }
