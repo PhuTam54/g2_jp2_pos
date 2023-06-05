@@ -26,17 +26,17 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label contentDisplay="RIGHT" layoutX="121.0" layoutY="10.0" prefHeight="35.0" prefWidth="210.0" text="0.0">
+            <Label fx:id="total" contentDisplay="RIGHT" layoutX="121.0" layoutY="10.0" prefHeight="35.0" prefWidth="210.0" text="\$0.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label contentDisplay="RIGHT" layoutX="121.0" layoutY="98.0" prefHeight="35.0" prefWidth="210.0" text="0.0">
+            <Label contentDisplay="RIGHT" layoutX="121.0" layoutY="98.0" prefHeight="35.0" prefWidth="210.0" text="\$0.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="119.0" layoutY="45.0" prefHeight="45.0" prefWidth="203.0">
+            <TextField layoutX="119.0" layoutY="45.0" prefHeight="45.0" prefWidth="203.0" promptText="\$0.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -55,12 +55,12 @@
       </Pane>
       <Pane layoutX="897.0" layoutY="142.0" prefHeight="473.0" prefWidth="420.0" style="-fx-background-color: #d3d3d3;">
          <children>
-            <Button layoutX="308.0" layoutY="434.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: black;" text="Reset" textFill="WHITE">
+            <Button layoutX="217.0" layoutY="434.0" mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="203.0" style="-fx-background-color: black;" text="Reset" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <TableView fx:id="tbv" layoutY="-1.0" prefHeight="435.0" prefWidth="420.0">
+            <TableView fx:id="tbv" layoutY="14.0" prefHeight="420.0" prefWidth="420.0">
               <columns>
                 <TableColumn fx:id="colID" prefWidth="42.0" text="ID" />
                 <TableColumn fx:id="colName" prefWidth="191.0" text="Name" />
@@ -89,7 +89,7 @@
             <Label alignment="CENTER" layoutX="208.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
             <Label fx:id="qty8" alignment="CENTER" layoutX="208.0" layoutY="216.0" prefHeight="31.0" prefWidth="195.0" text="0" />
             <Label alignment="CENTER" layoutX="7.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Tocotoco - $3.99" />
-            <Button layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#addToTable" prefHeight="185.0" prefWidth="181.0">
+            <Button layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#addToTable" prefHeight="185.0" prefWidth="181.0" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -98,7 +98,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="214.0" layoutY="6.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+            <Button layoutX="214.0" layoutY="6.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -107,7 +107,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="426.0" layoutY="6.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+            <Button layoutX="426.0" layoutY="6.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -116,7 +116,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="5.0" layoutY="240.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+            <Button layoutX="5.0" layoutY="240.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -125,7 +125,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="218.0" layoutY="240.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+            <Button layoutX="218.0" layoutY="240.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -134,7 +134,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="424.0" layoutY="240.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+            <Button layoutX="424.0" layoutY="240.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -143,7 +143,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="9.0" layoutY="488.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+            <Button layoutX="9.0" layoutY="488.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -152,7 +152,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="216.0" layoutY="488.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+            <Button layoutX="216.0" layoutY="488.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -161,7 +161,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="428.0" layoutY="488.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+            <Button layoutX="428.0" layoutY="488.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -172,10 +172,16 @@
             </Button>
          </children>
       </Pane>
-      <Pane layoutX="897.0" layoutY="77.0" prefHeight="65.0" prefWidth="420.0" style="-fx-background-color: #d3d3d3;">
+      <Pane layoutX="897.0" layoutY="77.0" prefHeight="79.0" prefWidth="420.0" style="-fx-background-color: #d3d3d3;">
          <children>
-            <TextField prefHeight="31.0" prefWidth="420.0" promptText="Enter the customer's name" style="-fx-background-radius: 100;" />
-            <TextField layoutY="31.0" prefHeight="31.0" prefWidth="420.0" promptText="Find the product" style="-fx-background-radius: 100;" />
+            <TextField prefHeight="31.0" prefWidth="420.0" promptText="Enter the customer's name" style="-fx-background-radius: 100;">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <TextField layoutY="39.0" prefHeight="39.0" prefWidth="420.0" promptText="Find the product" style="-fx-background-radius: 100;">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
          </children></Pane>
       <Pane prefHeight="58.0" prefWidth="1315.0" style="-fx-background-color: #4e2a84;">
          <children>
@@ -193,32 +199,32 @@
       </Pane>
       <Pane layoutY="78.0" prefHeight="728.0" prefWidth="247.0" style="-fx-background-color: #d3d3d3;">
          <children>
-            <Button layoutX="11.0" layoutY="63.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: #4e2a84;" text="Bobatea" textFill="WHITE">
+            <Button layoutX="11.0" layoutY="63.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: #4e2a84; -fx-background-radius: 10;" text="Bobatea" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="11.0" layoutY="132.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE;" text="Coffee">
+            <Button layoutX="11.0" layoutY="132.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;" text="Coffee">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="11.0" layoutY="201.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE;" text="Milk tea">
+            <Button layoutX="11.0" layoutY="201.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;" text="Milk tea">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="11.0" layoutY="273.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE;" text="Cake">
+            <Button layoutX="11.0" layoutY="273.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;" text="Cake">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="11.0" layoutY="342.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE;" text="Candy">
+            <Button layoutX="11.0" layoutY="342.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;" text="Candy">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="11.0" layoutY="410.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE;" text="Combo">
+            <Button layoutX="11.0" layoutY="410.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;" text="Combo">
                <font>
                   <Font size="18.0" />
                </font>
