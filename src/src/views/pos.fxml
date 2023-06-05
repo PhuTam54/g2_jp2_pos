@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PosController">
    <children>
       <Pane layoutX="649.0" layoutY="611.0" prefHeight="173.0" prefWidth="659.0" style="-fx-background-color: white;">
          <children>
@@ -54,12 +54,12 @@
       </Pane>
       <Pane layoutX="650.0" layoutY="32.0" prefHeight="571.0" prefWidth="337.0" style="-fx-background-color: white;">
          <children>
-            <TableView prefHeight="507.0" prefWidth="337.0">
+            <TableView fx:id="tbv" prefHeight="507.0" prefWidth="337.0">
               <columns>
-                <TableColumn prefWidth="38.0" text="ID" />
-                <TableColumn prefWidth="178.0" text="Name" />
-                  <TableColumn prefWidth="35.0" text="Qty" />
-                  <TableColumn prefWidth="85.0" text="Price" />
+                <TableColumn fx:id="colID" prefWidth="38.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="178.0" text="Name" />
+                  <TableColumn fx:id="colQty" prefWidth="35.0" text="Qty" />
+                  <TableColumn fx:id="colPrice" prefWidth="85.0" text="Price" />
               </columns>
             </TableView>
             <Button layoutX="205.0" layoutY="507.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="118.0" style="-fx-background-color: black;" text="Delete" textFill="WHITE">
@@ -74,25 +74,25 @@
          </children></Pane>
       <Pane layoutX="8.0" layoutY="32.0" prefHeight="753.0" prefWidth="635.0" style="-fx-background-color: white;">
          <children>
-            <Label layoutX="437.0" layoutY="681.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-            <Label fx:id="qty1" alignment="CENTER" layoutX="421.0" layoutY="712.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label alignment="CENTER" layoutX="437.0" layoutY="681.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty9s" alignment="CENTER" layoutX="421.0" layoutY="712.0" prefHeight="31.0" prefWidth="195.0" text="0" />
             <Label fx:id="qty2" alignment="CENTER" layoutX="196.0" layoutY="712.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-            <Label layoutX="220.0" layoutY="681.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label alignment="CENTER" layoutX="220.0" layoutY="681.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
             <Label fx:id="qty3" alignment="CENTER" layoutX="-5.0" layoutY="712.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-            <Label layoutX="11.0" layoutY="681.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label alignment="CENTER" layoutX="11.0" layoutY="681.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
             <Label fx:id="qty4" alignment="CENTER" layoutX="421.0" layoutY="472.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-            <Label layoutX="433.0" layoutY="441.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label alignment="CENTER" layoutX="433.0" layoutY="441.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
             <Label fx:id="qty5" alignment="CENTER" layoutX="-5.0" layoutY="472.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-            <Label layoutX="11.0" layoutY="441.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label alignment="CENTER" layoutX="11.0" layoutY="441.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
             <Label fx:id="qty6" alignment="CENTER" layoutX="433.0" layoutY="228.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-            <Label layoutX="433.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label alignment="CENTER" layoutX="433.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
             <Label fx:id="qty7" alignment="CENTER" layoutX="208.0" layoutY="472.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-            <Label layoutX="208.0" layoutY="441.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-            <Label fx:id="qty9" alignment="CENTER" layoutX="7.0" layoutY="228.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-            <Label layoutX="208.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label alignment="CENTER" layoutX="208.0" layoutY="441.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
+            <Label fx:id="qty1" alignment="CENTER" layoutX="7.0" layoutY="228.0" prefHeight="31.0" prefWidth="195.0" text="0" />
+            <Label alignment="CENTER" layoutX="208.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
             <Label fx:id="qty8" alignment="CENTER" layoutX="208.0" layoutY="228.0" prefHeight="31.0" prefWidth="195.0" text="0" />
-            <Label layoutX="7.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Name:" />
-            <Button layoutX="7.0" layoutY="6.0" mnemonicParsing="false" prefHeight="185.0" prefWidth="181.0">
+            <Label alignment="CENTER" layoutX="7.0" layoutY="185.0" prefHeight="31.0" prefWidth="195.0" text="Tocotoco" />
+            <Button layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#addToTable" prefHeight="185.0" prefWidth="181.0">
                <graphic>
                   <ImageView fitHeight="200.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
                      <image>
