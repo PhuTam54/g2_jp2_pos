@@ -3,12 +3,16 @@ package controllers;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import model.Table;
 
-public class PosController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class PosController implements Initializable {
     public TableView<Table> tbv;
     public TableColumn<Table, Integer> colID;
     public TableColumn<Table, String> colName;
@@ -20,13 +24,11 @@ public class PosController {
     public static Table resetTable;
     public void addTable(int id, int qty ,String name,  Double price) {
         // product already add
-//            for (int i = 0; i <= list.size(); i++) {
-//                list.remove(list.get(i));
-//            }
-        colID.setCellValueFactory(new PropertyValueFactory<>("id"));
-        colName.setCellValueFactory(new PropertyValueFactory<>("name"));
-        colQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
-        colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
+        for (Table t: list) {
+            if (list.contains(name)) {
+                list.remove(t);
+            }
+        }
         Table tb = new Table(id, qty, name, price);
         list.add(tb);
         tbv.setItems(list);
@@ -38,7 +40,7 @@ public class PosController {
         count ++;
         qty1.setText(String.valueOf(count));
 
-        Double price = count * 3.99;
+        Double price = Math.ceil((count * 3.99) * 100) / 100;
         addTable(1, count,"Tocotoco-$" + 3.99, price);
         total.setText("$" + price);
     }
@@ -61,5 +63,13 @@ public class PosController {
             alert.setContentText(e.getMessage());
             alert.show();
         }
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        colID.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        colQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
+        colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
     }
 }
