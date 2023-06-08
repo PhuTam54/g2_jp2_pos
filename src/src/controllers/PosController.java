@@ -1,5 +1,7 @@
 package controllers;
 
+import enums.RepositoryType;
+import factory.RepositoryFactory;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -71,5 +73,12 @@ public class PosController implements Initializable {
         colName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
         colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
+        try {
+//            ObservableList<Table> list = FXCollections.observableArrayList();
+            // query
+            list.addAll(RepositoryFactory.createRepositoryInstance(RepositoryType.TABLE).getAll());
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }
