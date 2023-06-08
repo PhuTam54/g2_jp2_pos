@@ -17,5 +17,6 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root,1315,810));
         primaryStage.setTitle("POS");
         primaryStage.show();
+        System.out.println("hello");
     }
 }
